@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- <img src="" alt=""> -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>note keeper</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/access-icon-vector-23458091.webp" type="image/x-icon">
+</head>
+<body oncontextmenu="return false">
+    <div class="loader">
+     
+        <h1>Loading...</h1>
+           <p id="subFeatures" class=""></p>
+    </div>
+    <div class="container-n">
+        <header>
+            <div class="dateAndTimeContainer">
+            <div class="t-d-y">
+                <h5 id="time_TDY"></h5>
+                <span>&VerticalBar;</span>
+                <h5 id="date_TDY"></h5>
+            </div>
+        </div>
+        <div class="user-cd">
+                <div class="user-profile">
+                    <div class="img-user">
+                        <img src="img/default-profile.jpg" alt="">
+                    </div>
+                </div>
+                <div class="user-deleteNoteBox">
+                    <img src="./icons/trash-2.png" alt="">
+                    <div class="dot-el"></div>
+                </div>
+                <div class="user-doneNoteBox">
+                    <img src="./icons/thumbs-up.png" alt="">
+                    <div class="dot-el"></div>
+                </div>
+            </div>
+        </header>
+        <div class="popup-userprofile userPopup">
+            <h5>Profile</h5>
+            <div class="close">
+                <img src="./icons/x-square.png" alt="">
+       
+            </div>
+
+                <div class="user-pop-detial">
+                    <div class="profile-img">
+                        <img src="./img/default-profile.jpg" alt="">
+                    </div>
+                    <div class="nameAndAs">
+                        <h2>Rushabh Malvaniya</h2>
+                        <p>CEO</p>
+                    </div>
+                </div>
+                <div class="inner-popup ">
+                <div class="divider"></div>
+                <ul class="linkFuser">
+                    <label for="toggleMode" class="DARKMODE">
+                        <input type="checkbox" name="" id="toggleMode">
+                        <div class="cirlce"></div>
+                    </label>
+                    <li class="totalOrder">
+                        <p class="totalNote">
+                            Total Note's : <B class="numbertotalNotes">0</B>
+                        </p>
+                        <p class="RbinNotes">
+                            Recycle bin: <B class="numberRbin">0</B>
+                        </p>
+                        <p class="comWorkNotes">
+                            complete work: <B class="numberCom">0</B>
+                        </p>
+                    </li>
+                 
+                    <li>
+                        <p>logout</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="popup-DeleteNoteBox userPopup">
+            <h5>TrashCan</h5>
+            <div class="close">
+                <img src="./icons/x-square.png" alt="">
+            </div>
+            <div class="inner-popup cup trashcan">
+                
+            </div>
+        </div>
+        <div class="popup-DoneNoteBox userPopup">
+            <h5>Complete Work</h5>
+            <div class="close">
+                <img src="./icons/x-square.png" alt="">
+            </div>
+            <div class="inner-popup cup completeWork">
+
+            </div>
+        </div>
+        <nav>
+            <!-- <img src="" alt=""> -->
+            <div class="user-input-container">
+                <div class="c-uI-box">
+                    <input type="text" class="user-input"
+                    id="headingText" placeholder="write note here"/>
+                    <input type="text" class="user-input"
+                    id="summryText" placeholder="write summry here"/>
+                </div>
+                <button id="createNote" class="user-input-btn ">
+                    <h5>create</h5>
+                   <img src="./icons/pen-line.png" alt=""> 
+                </button>
+            </div>
+            <h1 id="noteCounter">0</h1>
+        </nav>
+        <footer class="footer">
+            <h1>All rights a belongs to <a href="https://github.com/rushabh57" class="f-a" target="_blank">RM</a>:Web developer</h1>
+        </footer>
+        <!-- <div class="Impnote-collection"></div> -->
+        <div class="note-collection"></div>
+
+        <div class="custom-alert"></div>
+    </div>
+ 
+        </body>
+
+      
+        
+    <script src="js/script2.js"></script>
+    <script src="js/script1.js"></script>
+    <script src="js/popupnav.js"></script>
+    <script src="js/darmode.js"></script>
+</body>
+</html>
